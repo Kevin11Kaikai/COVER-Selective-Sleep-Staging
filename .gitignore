@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.runtime/
+/outputs/
+/New_Objective_Idea/outputs/
+/AutoML_Claude/outputs/
+/models/
+/data/
+.env
+.env.*
+*.log
+*.partial
+.DS_Store
+Thumbs.db

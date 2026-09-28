@@ -1,0 +1,271 @@
+{
+  "matched_errors_original_budget": {
+    "Learned-Selected": {
+      "recomputed": 817,
+      "published": 817,
+      "match": true
+    },
+    "MSP": {
+      "recomputed": 1369,
+      "published": 1369,
+      "match": true
+    },
+    "Primary-only": {
+      "recomputed": 1133,
+      "published": 1133,
+      "match": true
+    },
+    "DuoF": {
+      "recomputed": 946,
+      "published": 946,
+      "match": true
+    },
+    "Forward-KL": {
+      "recomputed": 2171,
+      "published": 2171,
+      "match": true
+    },
+    "Linear-BCE": {
+      "recomputed": 794,
+      "published": 794,
+      "match": true
+    },
+    "SELE": {
+      "recomputed": 798,
+      "published": 798,
+      "match": true
+    },
+    "FixedScale": {
+      "recomputed": 803,
+      "published": 803,
+      "match": true
+    },
+    "BCEAnchor": {
+      "recomputed": 780,
+      "published": 780,
+      "match": true
+    }
+  },
+  "own_rule_accepted": {
+    "Learned-Selected": {
+      "recomputed": 19892,
+      "published": 19892,
+      "match": true
+    },
+    "Linear-BCE": {
+      "recomputed": 20639,
+      "published": 20639,
+      "match": true
+    },
+    "FixedScale": {
+      "recomputed": 21455,
+      "published": 21455,
+      "match": true
+    },
+    "SELE": {
+      "recomputed": 20875,
+      "published": 20875,
+      "match": true
+    },
+    "BCEAnchor": {
+      "recomputed": 20805,
+      "published": 20805,
+      "match": true
+    }
+  },
+  "paired_intervals": [
+    {
+      "context": "frozen_cert05",
+      "method_b": "MSP",
+      "metric": "macro_coverage",
+      "recomputed": [
+        0.15617098858015332,
+        0.09330550570818755,
+        0.22460583448451296
+      ],
+      "published": [
+        0.15617098858015332,
+        0.09330550570818755,
+        0.22460583448451296
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "MSP",
+      "metric": "pooled_risk",
+      "recomputed": [
+        -0.0003961022549289067,
+        -0.01208368475315231,
+        0.01165651832180048
+      ],
+      "published": [
+        -0.0003961022549289067,
+        -0.01208368475315231,
+        0.01165651832180048
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "MSP",
+      "metric": "subject_equal_ratio_risk",
+      "recomputed": [
+        0.0003769953621792915,
+        -0.01172373900636202,
+        0.013042512650045805
+      ],
+      "published": [
+        0.0003769953621792915,
+        -0.01172373900636202,
+        0.013042512650045805
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "DuoF",
+      "metric": "macro_coverage",
+      "recomputed": [
+        0.03442678793541393,
+        -0.007529258234077141,
+        0.07980910550624991
+      ],
+      "published": [
+        0.03442678793541393,
+        -0.007529258234077141,
+        0.07980910550624991
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "DuoF",
+      "metric": "pooled_risk",
+      "recomputed": [
+        -0.0024812825692766063,
+        -0.01097589995292094,
+        0.004485502387854359
+      ],
+      "published": [
+        -0.0024812825692766063,
+        -0.01097589995292094,
+        0.004485502387854359
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "DuoF",
+      "metric": "subject_equal_ratio_risk",
+      "recomputed": [
+        -0.0031083662542175233,
+        -0.011943326621832954,
+        0.004530003779685828
+      ],
+      "published": [
+        -0.0031083662542175233,
+        -0.011943326621832954,
+        0.004530003779685828
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "Primary-only",
+      "metric": "macro_coverage",
+      "recomputed": [
+        0.10827043745288795,
+        0.06001306338611597,
+        0.1604440449946263
+      ],
+      "published": [
+        0.10827043745288795,
+        0.06001306338611597,
+        0.1604440449946263
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "Primary-only",
+      "metric": "pooled_risk",
+      "recomputed": [
+        0.004412170912957529,
+        -0.004703968830882284,
+        0.012551024108944462
+      ],
+      "published": [
+        0.004412170912957529,
+        -0.004703968830882284,
+        0.012551024108944462
+      ],
+      "match": true
+    },
+    {
+      "context": "frozen_cert05",
+      "method_b": "Primary-only",
+      "metric": "subject_equal_ratio_risk",
+      "recomputed": [
+        0.003858419329166453,
+        -0.005004148400479896,
+        0.012049657957490321
+      ],
+      "published": [
+        0.003858419329166453,
+        -0.005004148400479896,
+        0.012049657957490321
+      ],
+      "match": true
+    },
+    {
+      "context": "matched_original_reference",
+      "method_b": "MSP",
+      "metric": "pooled_risk",
+      "recomputed": [
+        -0.02774984918560225,
+        -0.05109394178357903,
+        -0.011332959149419678
+      ],
+      "published": [
+        -0.02774984918560225,
+        -0.05109394178357903,
+        -0.011332959149419678
+      ],
+      "match": true
+    },
+    {
+      "context": "matched_original_reference",
+      "method_b": "DuoF",
+      "metric": "pooled_risk",
+      "recomputed": [
+        -0.006485019103157047,
+        -0.02239311441405685,
+        0.003594011048547862
+      ],
+      "published": [
+        -0.006485019103157047,
+        -0.02239311441405685,
+        0.003594011048547862
+      ],
+      "match": true
+    },
+    {
+      "context": "matched_original_reference",
+      "method_b": "Primary-only",
+      "metric": "pooled_risk",
+      "recomputed": [
+        -0.01588578322943897,
+        -0.03393857220018383,
+        -0.0034283597079340965
+      ],
+      "published": [
+        -0.01588578322943897,
+        -0.03393857220018383,
+        -0.0034283597079340965
+      ],
+      "match": true
+    }
+  ],
+  "all_match": true
+}

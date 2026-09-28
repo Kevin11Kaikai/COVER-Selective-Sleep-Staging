@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or the accompanying results, please cite the COVER manuscript. An arXiv identifier will be added after announcement."
+title: "COVER: Learning to Accept More in Selective Sleep Staging"
+type: software
+version: 0.1.0
+date-released: 2026-09-28
+license: GPL-3.0
+repository-code: "https://github.com/Kevin11Kaikai/COVER-Selective-Sleep-Staging"
+authors:
+  - family-names: Song
+    given-names: Yukai
+    affiliation: "Department of Electrical and Computer Engineering, University of Pittsburgh"
+  - family-names: Deng
+    given-names: Yangfan
+    affiliation: "Department of Electrical and Computer Engineering, University of Maryland, College Park"
+  - family-names: Yin
+    given-names: Jijun
+    affiliation: "Department of Electrical and Computer Engineering, University of Pittsburgh"
+  - family-names: Mao
+    given-names: Zhi-Hong
+    affiliation: "Department of Electrical and Computer Engineering, University of Pittsburgh"
+  - family-names: Hu
+    given-names: Jingtong
+    affiliation: "Department of Electrical and Computer Engineering, University of Pittsburgh"

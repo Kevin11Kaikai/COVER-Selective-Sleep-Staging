@@ -1,0 +1,37 @@
+{
+  "schema": "stage1-strengthening-v1",
+  "status": "retrospective_analysis_specification",
+  "run_id": "stage1_strengthening_v1",
+  "population": "Sleep-EDF-20, Fpz-Cz, original 42308 eligible epochs",
+  "main_methods": ["Learned-Selected", "MSP", "DuoF", "Primary-only", "Forward-KL"],
+  "primary_cert_alpha": 0.05,
+  "secondary_cert_alpha": 0.03,
+  "outer_pass_risk": 0.05,
+  "outer_pass_min_accepted": 50,
+  "quota_percentages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100],
+  "quota_rule": "floor(percent * n_subject / 100), separately in each subject",
+  "tie_rule": "ascending SHA256(dataset|subject_id|record_id|epoch_index), no labels",
+  "matched_quota_reference": "original Learned-Selected 0.05 empirical acceptance counts per subject",
+  "bootstrap": {"unit": "outer_subject", "paired": true, "replicates": 10000, "seed": 20260901, "generator": "PCG64", "quantile_method": "linear", "interval": [0.025, 0.975], "interpretation": "descriptive; overlapping fitted folds and historical exposure"},
+  "historical_case_pairs": [["B0.02-Heterogeneous", "A-Heterogeneous"], ["E-Heterogeneous", "B0.03-Heterogeneous"]],
+  "cpu_threads": 2,
+  "component_metrics": {
+    "prediction_source": "saved OUTER probabilities; RF after isotonic",
+    "primary_table_aggregation": "pooled_epochs",
+    "additional_aggregation": "mean_subject",
+    "macro_classes": ["Wake", "N1", "N2", "N3", "REM"],
+    "zero_division": 0
+  },
+  "class_diagnostics": {
+    "group": "true_class; pooled OUTER epochs within class",
+    "accepted_accuracy": "correct_accepted / accepted",
+    "correct_retention": "correct_accepted / primary_correct",
+    "correct_automation": "correct_accepted / true_class_count",
+    "zero_denominator": "undefined; blank CSV and dash in manuscript",
+    "main_figure_context": "original 0.05 CERT policies"
+  },
+  "new_fitting": false,
+  "outer_outcomes_used_for_selection": false,
+  "external_test": "NOT_EXECUTED",
+  "certified": false
+}

@@ -1,0 +1,2 @@
+# Preserve imported byte hashes across Windows and Linux checkouts.
+* -text
